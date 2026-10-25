@@ -1,0 +1,12 @@
+Independent stage-2 checker (independent/check_lift2.py, Python + Arb ball arithmetic via python-flint 0.6.0)
+version: development repository commit 77cc615687dbda197fdf0687afeb17d53b22a5ae, file sha256
+  b71f25ac8405f698a386d7182f56ae1521a6638204a87ba4166ae506bacded5a
+sample (fixed in advance, independent/make_sample.py): 604 stage-2 archives = all 304 containing a (B) leaf + 300 others
+  drawn with random.Random(20261025); in each, every (B) leaf and each other leaf with probability 0.005
+  (random.Random seeded by archive and log name)
+run: 25 Oct 2026, 8 x 64-vCPU cloud instances, archives streamed from the bucket
+result: 604 archives, 2,403,527 leaves checked, 0 failures, 0 errors
+  B 47,437 (every (B) leaf of the certificate)
+  P 1,485,204
+  F 508,521
+  N 362,365

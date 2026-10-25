@@ -1,0 +1,5 @@
+Final re-check (replay 2, 2026-10-24/25): one static build, identical on every machine
+2ae354dc0ac997227035c8f79bdcce1edb01b56ce4e816c16f55de91115950ca  check_phi
+94439b73ce2e292420df8aa6eb901e94566cbc761ebb1315d4ecf0dd43bcd4ab  check_lift
+gcc (Ubuntu 11.4.0-1ubuntu1~22.04.3) 11.4.0
+source version (git): b5e57c27466195192cfc8a46dc8bcd87a004de77

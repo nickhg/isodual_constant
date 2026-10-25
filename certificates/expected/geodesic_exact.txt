@@ -1,0 +1,11 @@
+det HD, HA, P0: 4 81 18225
+eigenvalue pairs (lambda of Y, mu of X) with multiplicity:
+   3/2 15/2
+   3/2 15/2
+   3 9
+   3 9
+   log mu / log lambda (normalised) = 0.263034405833794   lambda_n 0.707106781187 mu_n 0.912870929175
+   log mu / log lambda (normalised) = 0.263034405833794   lambda_n 0.707106781187 mu_n 0.912870929175
+   log mu / log lambda (normalised) = 0.263034405833794   lambda_n 1.414213562373 mu_n 1.095445115010
+   log mu / log lambda (normalised) = 0.263034405833794   lambda_n 1.414213562373 mu_n 1.095445115010
+exit 0 after 1 s

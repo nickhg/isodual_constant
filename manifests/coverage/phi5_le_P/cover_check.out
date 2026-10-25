@@ -1,0 +1,10 @@
+1110 roots tile y1 in [-0x1.4aa17132645f1p-2, 0x1.62e42fefa39f1p-2]  (n=4 dim=9 phi=0x1.9e409340f4581p+2 c=1.8204 ver=1399bb7234d64dae9412606e146bfa7aec734e69); 450 of them split pieces, each tiled by its sub-logs
+  coordinate 2: [-0x1.81657bedb22ebp-4, 0x1.269621134db93p-1]
+  coordinate 3: [-0x1.4aa17132645f1p-2, 0x1.62e42fefa39f1p-2]
+  coordinate 4: [0x0.0p+0, 0x1.0000000000000p-1]
+  coordinate 5: [-0x1.0000000000000p-1, 0x1.0000000000000p-1]
+  coordinate 6: [0x0.0p+0, 0x1.0000000000000p-1]
+  coordinate 7: [-0x1.0000000000000p-1, 0x1.0000000000000p-1]
+  coordinate 8: [-0x1.0000000000000p-1, 0x1.0000000000000p-1]
+  coordinate 9: [0x0.0p+0, 0x1.0000000000000p-1]
+union equals the reference root box

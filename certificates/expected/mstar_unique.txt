@@ -1,0 +1,7 @@
+norms below 1: {8/9: 9}  minimal pairs: 9
+basis: [[0, 0, 0, 1], [0, 0, 1, 0], [0, 1, 0, 1], [1, 1, 0, 1]]
+others in that basis: [[-1, 1, 1, 0], [0, 1, 1, 0], [-1, 1, 0, 1], [0, 1, 0, 1], [-1, 1, 1, 1]]
+feasible regions: 2
+phi mod Z^4: {(0, 0, 1/3, 1/3), (0, 0, 2/3, 2/3)}
+UNIQUE: the kappa-maximisers of M* are exactly +-phi0 = +-(0,0,1/3,1/3) mod Z^4
+exit 0 after 4 s

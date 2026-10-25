@@ -1,0 +1,8 @@
+tangent dimension of F: 3
+check: tau fixes the family (3 random points): True
+D4: numerical distance 5.67e-09; integral B found; H rational, det 4, c' = 2; U (c' H^-1) U^T == H exactly: True
+A2xA2: numerical distance 2.98e-09; integral B found; H rational, det 81, c' = 9; U (c' H^-1) U^T == H exactly: True
+X Y == Y X exactly: True
+H_D = [[2, -1, 0, 0], [-1, 2, -1, -1], [0, -1, 2, 0], [0, -1, 0, 2]]
+H_A = [[6, -3, 0, 0], [-3, 6, -3, -3], [0, -3, 4, 1], [0, -3, 1, 4]]
+exit 0 after 2 s

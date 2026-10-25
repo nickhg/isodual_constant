@@ -1,0 +1,6 @@
+det 81 eta(A2 x A2) = 64/27
+min 4 minimal vectors 18 next 6
+min_s k_s(phi0) = 3/2 = 3/2 * ... check: True
+Phi_5 = 16/3
+max over 6-torsion points: 3/2
+exit 0 after 70 s

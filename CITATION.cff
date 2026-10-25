@@ -1,0 +1,15 @@
+cff-version: 1.2.0
+message: "If you use this code or data, please cite the paper."
+title: "The isodual constant of the LLL potential: code and certificates"
+authors:
+  - family-names: Howgrave-Graham
+    given-names: Nick
+license: MIT
+repository-code: "https://github.com/nickhg/isodual_constant"
+preferred-citation:
+  type: article
+  title: "The isodual constant of the LLL potential: exact values, structure and reduction guarantees"
+  authors:
+    - family-names: Howgrave-Graham
+      given-names: Nick
+  year: 2026

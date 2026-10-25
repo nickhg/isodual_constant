@@ -1,0 +1,5 @@
+The certificate data, manifests and expected outputs (the files in manifests/, certificates/expected/, example/data/
+and the dataset described in DATA.md) are licensed under the Creative Commons Attribution 4.0 International licence
+(CC BY 4.0), https://creativecommons.org/licenses/by/4.0/ .  Copyright (c) 2026 Nick Howgrave-Graham.
+Please cite: Nick Howgrave-Graham, The isodual constant of the LLL potential: exact values, structure and reduction
+guarantees (2026).

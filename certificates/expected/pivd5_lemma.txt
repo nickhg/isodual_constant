@@ -1,0 +1,11 @@
+G0 = [2, -1, 0, 0, -1, 3/2, -1, 0, 0, -1, 2, -1, 0, 0, -1, 2]  det 2
+k_s(G0, phi0) = 2 for the 6 half and 7 integer vectors
+half vectors generate Z^4; |HK|_inf = 3
+integer vectors as +-h_a +-h_b: [(1, 2), (0, 1), (0, 2), (0, 3), (0, 4), (0, 5), (1, 5)]
+36 flags, prod_k det G_k = 6; Phi~(G0)^2 = 36
+rho = 1/20, c = 11/20, theta = 229/240, eps = 2200/39879
+B <= 1.16855132540229
+Gamma: 432 vertices, 14199 facets (3709s); inradius^2 = 20872184763/1215945084601, r = 0.1310167959797983?
+interior margin r - rem = 0.0276978622599232?   exterior margin = 0.12757418532229?   (|HK|+1) U = 0.1100000000000000?
+LEMMA HOLDS: Phi_5(G) <= 6 for d(G, G0) <= 1/20 (equality only at G0)
+exit 0 after 3728 s

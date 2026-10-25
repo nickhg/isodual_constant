@@ -1,0 +1,5 @@
+build/
+*.sage.py
+certificates/run_all.log
+*.pdf
+__pycache__/

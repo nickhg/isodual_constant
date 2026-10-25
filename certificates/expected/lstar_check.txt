@@ -1,0 +1,9 @@
+min of P0: 16  r(1 - 1/9) = 16
+G/3 integral: True  det 1350 = 2 * 3^3 * 5^2
+WC form det 1350
+isometric to WC's form: True
+shells (norm: vectors): [(6, 26), (8, 18), (10, 6), (12, 30), (14, 18)]
+flag unimodular: 1  prefix dets: [6, 27, 108, 405, 1350]
+flag bound: 486/125
+eta(L_*) exact = 486/125 = 3.888
+exit 0 after 3 s

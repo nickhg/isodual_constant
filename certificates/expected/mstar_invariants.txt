@@ -1,0 +1,14 @@
+M* det 18225 theta (norm: count)  [(0, 1), (16, 18), (18, 6), (30, 6), (34, 18)]
+  |Aut| = 72  (pari qfauto)
+A2xA2 det 81 theta (norm: count)  [(0, 1), (4, 18), (6, 12), (10, 36), (12, 36), (16, 90), (18, 12), (22, 72), (24, 84), (28, 144), (30, 72), (34, 108)]
+  |Aut| = 144  (pari qfauto)
+  d = 1 : det 18225  isometric to M*: True
+  d = 5 : det 18225  isometric to M*: False
+  d = 27 : det 18225  isometric to M*: False
+  d = 135 : det 18225  isometric to M*: True
+isodual family through M*: dim of the 1-eigenspace of D tau = 3 (including scaling? scaling E = P0 has D tau(P0) = -P0 )
+  eigenvalues of D tau: [(-1, 3), (-1*I, 2), (1*I, 2), (1, 3)]
+M*: charpoly(U^{-1} U^T) = x^4 - 2*x^2 + 1
+A2xA2 isodual: True
+A2xA2: |Aut| = 144 ; charpolys of V^{-1} V^T over its isodualities: {'x^4 - 4*x^3 + 6*x^2 - 4*x + 1', 'x^4 - x^3 - x + 1', 'x^4 - 2*x^2 + 1', 'x^4 - 2*x^3 + 3*x^2 - 2*x + 1'}
+exit 0 after 2 s

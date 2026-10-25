@@ -1,0 +1,6 @@
+CORE-MATH correctly rounded exp and log (binary64), used by check_phi.c and check_lift.c for their interval exp/log
+(each result widened by one ulp in each direction; correct rounding in every rounding mode gives |error| < 1 ulp).
+Source: https://gitlab.inria.fr/core-math/core-math, commit 0ce0cbc15935e24c656280e5a46c34e89f301b7a (2026-10-20),
+files src/binary64/exp/exp.c, src/binary64/log/log.c, src/binary64/log/dint.h, unmodified. License: MIT (LICENSE).
+Build: gcc -O2 -mfma -ffp-contract=off -c exp.c log.c   (FMA for CORE-MATH's __builtin_fma; the checkers themselves are
+compiled for baseline x86-64 with -ffp-contract=off). Test: runs/test_crexplog.sh.

@@ -1,0 +1,14 @@
+sys:1: DeprecationWarning: automatic conversions from floating-point numbers to intervals are deprecated
+See http://trac.sagemath.org/15114 for details.
+sys:1: DeprecationWarning: automatic conversions from floating-point numbers to intervals are deprecated
+See http://trac.sagemath.org/15114 for details.
+k_s(G0, phi0) = 18 for 9 third and 3 integer vectors; the 9 minimal vectors are the thirds
+54 flags, prod_k det G_k = 6635520; Phi~(G0) = 65536/10125
+interior polytope: 6 vertices; C_third = 2, C_int = 3
+24 short vectors for the far test; max |L_s|_* 0.8660, |L_f1|_* 2.2361; far threshold K <= 17.1181
+torus cover of [0,1]^4: 3560 leaf cells (3046 exterior, 0 far, 514 near +-phi0; U0 = 9/400), from 3559 splits (7119 nodes) (3s)
+B <= 1.19626417654310
+Gamma_kappa: 9 vertices; Gamma: 468 vertices, 11162 facets (6978s); inradius^2 = 121/512, r = 0.4861359120657515?
+interior margin 0.069146805847305?   exterior margin 0.045961946803944?
+LEMMA HOLDS: Phi_5(G) <= 2^16/(3^4 5^3) for d(G, G0) <= 1/40 (equality only at G0)
+exit 0 after 6991 s

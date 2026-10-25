@@ -1,0 +1,21 @@
+Psi-minimal bases: 720 (2s)
+distinct flag gradients: 720
+axis  0: t+ = 13/28, t- = 13/28, a_j = 1.31320  (15s)
+axis  1: t+ = 39/47, t- = 39/47, a_j = 1.01628  (26s)
+axis  2: t+ = 2651753/3194972, t- = 2651753/3194972, a_j = 0.95837  (37s)
+axis  3: t+ = 510562/608265, t- = 510562/608265, a_j = 0.93845  (48s)
+axis  4: t+ = 10/9, t- = 10/9, a_j = 0.99381  (61s)
+axis  5: t+ = 39286/63345, t- = 1793/3084, a_j = 1.06808  (74s)
+axis  6: t+ = 1313/1580, t- = 32423/27840, a_j = 0.83101  (82s)
+axis  7: t+ = 23/27, t- = 28106/24465, a_j = 0.82480  (90s)
+axis  8: t+ = 10/9, t- = 815/474, a_j = 0.86066  (98s)
+axis  9: t+ = 2/3, t- = 69/94, a_j = 0.88425  (108s)
+axis 10: t+ = 190/207, t- = 4370/2281, a_j = 0.76312  (119s)
+axis 11: t+ = 394/261, t- = 2, a_j = 0.87817  (129s)
+axis 12: t+ = 2/3, t- = 575/803, a_j = 0.82192  (137s)
+axis 13: t+ = 1862/1269, t- = 2, a_j = 0.75271  (151s)
+inradius >= r = 0.2392678350612390? (cross-polytope bound)
+rho_max ~ 0.108563
+rho = 1/10: margin r - (n-1)/2 rho exp(sqrt((n-1)/n) rho) = 0.020554896831531?
+LEMMA HOLDS: eta(G) <= 6 for d(G, G0) <= 1/10 about D5 (equality only at G0); likewise about its dual by isoduality
+exit 0 after 164 s
