@@ -4,7 +4,7 @@ The certificate logs total about 263 GB in about 70,000 files. They are publishe
 
 ## Where to get it
 
-The dataset is on Hugging Face: [`nickhg1971/isodual-constant-certificates`](https://huggingface.co/datasets/nickhg1971/isodual-constant-certificates). Downloads are free and need no account. You can take any single file, any folder, or everything.
+The dataset is on Hugging Face: [`nickhg1971/isodual-constant-certificates`](https://huggingface.co/datasets/nickhg1971/isodual-constant-certificates), DOI [10.57967/hf/11260](https://doi.org/10.57967/hf/11260) (revision `96e9321`, the one these manifests describe). Downloads are free and need no account. You can take any single file, any folder, or everything.
 
 - **One file:** every file has a direct link:
   ```

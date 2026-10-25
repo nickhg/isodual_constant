@@ -1,11 +1,27 @@
 {
   "title": "The isodual constant of the LLL potential: code and certificates",
   "upload_type": "software",
-  "creators": [{"name": "Howgrave-Graham, Nick"}],
+  "creators": [
+    {
+      "name": "Howgrave-Graham, Nick"
+    }
+  ],
   "description": "Checkers, coverage scripts, exact certificates, hash manifests and verification instructions for the computer-assisted proof of eta_5 = 6 in Nick Howgrave-Graham, <i>The isodual constant of the LLL potential: exact values, structure and reduction guarantees</i> (2026). The certificate logs (about 263 GB) are in the dataset linked below.",
   "license": "MIT",
-  "keywords": ["lattices", "geometry of numbers", "LLL", "Hermite constant", "computer-assisted proof", "interval arithmetic"],
+  "keywords": [
+    "lattices",
+    "geometry of numbers",
+    "LLL",
+    "Hermite constant",
+    "computer-assisted proof",
+    "interval arithmetic"
+  ],
   "related_identifiers": [
-    {"identifier": "https://huggingface.co/datasets/nickhg1971/isodual-constant-certificates", "relation": "isSupplementedBy", "resource_type": "dataset"}
+    {
+      "identifier": "10.57967/hf/11260",
+      "relation": "isSupplementedBy",
+      "resource_type": "dataset",
+      "scheme": "doi"
+    }
   ]
 }

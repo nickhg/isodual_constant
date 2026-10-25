@@ -4,7 +4,7 @@ Code, certificates and verification instructions for
 
 > **Nick Howgrave-Graham, *The isodual constant of the LLL potential: exact values, structure and reduction guarantees* (2026).** [arXiv link to be added]
 
-**Status:** preprint. DOIs for this repository (via Zenodo) and for the dataset will be added on release. To report a problem, or a failed check, please open an issue on this repository.
+**Status:** preprint. The dataset's DOI is [10.57967/hf/11260](https://doi.org/10.57967/hf/11260); this repository's (via Zenodo) will be added on release. To report a problem, or a failed check, please open an issue on this repository.
 
 ## The paper
 
@@ -34,7 +34,7 @@ The proof of η₅ = 6 is computer-assisted. This repository contains everything
 | `manifests/` | the SHA-256 of every certificate log as recorded when it was produced; the split manifests and reference root boxes for coverage; coverage outputs; checker binary hashes |
 | `example/` | a complete worked example (`example/run_example.sh`, about 3 minutes, data included) |
 
-**The certificate logs themselves** (about 263 GB) are not in this repository. They are in the Hugging Face dataset [`nickhg1971/isodual-constant-certificates`](https://huggingface.co/datasets/nickhg1971/isodual-constant-certificates), free to download with no account; see [`DATA.md`](DATA.md).
+**The certificate logs themselves** (about 263 GB) are not in this repository. They are in the Hugging Face dataset [`nickhg1971/isodual-constant-certificates`](https://huggingface.co/datasets/nickhg1971/isodual-constant-certificates) ([doi:10.57967/hf/11260](https://doi.org/10.57967/hf/11260), revision `96e9321`), free to download with no account; see [`DATA.md`](DATA.md).
 
 ## Version stamps
 
