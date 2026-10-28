@@ -79,13 +79,15 @@ It needs gcc and python3, plus python-flint and mpmath for steps 5 and 7 (skippe
 5. runs the independent checker `check_lift2.py` on the (B) leaf and a 0.2% sample of one log;
 6. runs `scripts/check_lift_tests.sh`: 23 deliberately broken certificates, each of which the checker must reject;
 7. runs `scripts/test_crexplog.sh`: CORE-MATH's exp and log against mpmath at 60 digits, in both rounding modes (20,000 points).
+8. runs `scripts/check_phi_controls.sh`: negative controls at the two maximizers M\* and π_vD₅. A box of half-width 10⁻⁷ about each must be rejected by `check_phi` without the balls of Propositions [M\*] and [π_vD₅], at the true maximum and 10⁻⁶ below it, even with 24 extra bisections. It must be accepted 10⁻³ above the maximum, and with the balls (12 cases);
+9. runs `scripts/coverage_mutation_tests.sh`: 30 damaged inputs to the coverage scripts (a deleted, duplicated or truncated file or line, an endpoint shifted by one ulp, a wrong header, an output from another job), each of which must be rejected.
 
 Every step prints `-> passed`, and the script ends with `EXAMPLE PASSED`, after about 3 minutes on one laptop core. We ran it with gcc 12.2 (Debian 12) on an Intel Core i3-1215U. The paper's final re-check used gcc 11.4 (Ubuntu 22.04), and the stage-2 checker output was still byte-identical to the final re-check's. This is a robustness check, not a requirement: any C99 compiler with IEEE-754 doubles and directed rounding (`-frounding-math`) should do.
 
 **Build requirements.** An x86-64 CPU with the FMA instruction: Intel from Haswell (2013) on, or AMD from Piledriver (2012) on. `scripts/build.sh` checks this and stops if it is missing. `-mfma` is used only for the two CORE-MATH files (`exp.c`, `log.c`), which call `fma` explicitly. The checkers themselves are compiled without `-mfma` and with `-ffp-contract=off`, so their own arithmetic contains no fused operations. This is the build used for every check reported in the paper.
 
 **What this establishes:**
-- **It does:** the pipeline works as described; the log format is what the paper says; the checker rejects tampered logs; the arithmetic library is correctly rounded on the test points.
+- **It does:** the pipeline works as described; the log format is what the paper says; the checkers reject tampered logs and cannot certify a bound below the true maximum; the coverage scripts reject damaged inputs; the arithmetic library is correctly rounded on the test points.
 - **It does not:** say anything about the rest of the certificate.
 
 ## Tier 3: a sample of the published certificate (workstation, a few GB)

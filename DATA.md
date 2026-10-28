@@ -32,6 +32,8 @@ The dataset is on Hugging Face: [`nickhg1971/isodual-constant-certificates`](htt
 | `eta5_stage2/fix/` | 3 | 70 MB | the box-by-box proofs of Appendix E (`<job>.fix.logs.tar.xz`) |
 | `checker_outputs/` | 4 | 41 MB | the outputs of the paper's final re-check, one archive per certificate (`phi5_lt7.tar.xz` 45 KB, `phi5_le_P.tar.xz` 0.4 MB, `eta5_stage1.tar.xz` 2.4 MB, `eta5_stage2.tar.xz` 38 MB) |
 
+Of the 15,841 stage-2 jobs, 15,839 have an archive in `logs/`. The other two (`466_480_3_8_c000`, `466_480_6_8_c000`) were proved box by box and are in `fix/`. So is the third file there, `465_480_3_8_c004`: it covers the one box of that job that the bisection fallback missed (the paper, Appendix E).
+
 To run the coverage scripts, unpack the two tars beside `jobs.txt`: `cover_s2.py` expects `merged/`, `chunks/` and `jobs.txt` in one directory (see `scripts/cover_s2.py`).
 
 ## What each part is for

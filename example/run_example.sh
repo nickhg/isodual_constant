@@ -53,4 +53,10 @@ chk scripts/check_lift_tests.sh build/check_lift $W/a409/67.log
 step "7. CORE-MATH exp and log against mpmath at 60 digits, rounding up and to nearest (20,000 points)"
 if python3 -c "import mpmath" 2>/dev/null; then chk scripts/test_crexplog.sh 20000; else echo "   (skipped: pip install mpmath)"; fi
 
+step "8. 12 negative controls at M* and pi_v D5: without the balls, check_phi must reject a box containing the maximizer"
+chk scripts/check_phi_controls.sh build/check_phi
+
+step "9. 30 mutation tests of the coverage scripts: each damaged input must be rejected"
+chk scripts/coverage_mutation_tests.sh
+
 echo; [ $bad = 0 ] && echo "EXAMPLE PASSED" || { echo "EXAMPLE FAILED: $bad checks"; exit 1; }
