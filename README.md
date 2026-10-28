@@ -4,7 +4,7 @@ Code, certificates and verification instructions for
 
 > **Nick Howgrave-Graham, *The isodual constant of the LLL potential: exact values and structure* (2026).** [arXiv link to be added]
 
-**Status:** preprint. DOIs: this repository, all versions [10.5281/zenodo.23650216](https://doi.org/10.5281/zenodo.23650216) (release v1.0: [10.5281/zenodo.23650217](https://doi.org/10.5281/zenodo.23650217); release v1.1 matches the current version of the paper); the dataset, [10.57967/hf/11260](https://doi.org/10.57967/hf/11260). To report a problem, or a failed check, please open an issue on this repository.
+**Status:** preprint. DOIs: this repository, all versions [10.5281/zenodo.23650216](https://doi.org/10.5281/zenodo.23650216) (release v1.0: [10.5281/zenodo.23650217](https://doi.org/10.5281/zenodo.23650217); release v1.1, which matches the preprint of 28 October 2026: [10.5281/zenodo.23743844](https://doi.org/10.5281/zenodo.23743844)); the dataset, [10.57967/hf/11260](https://doi.org/10.57967/hf/11260). To report a problem, or a failed check, please open an issue on this repository.
 
 ## The paper
 
