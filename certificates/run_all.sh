@@ -25,3 +25,4 @@ run mstar_mass        sage mstar_mass.sage                 # Prop. mstarprops (7
 run mstar_eisenstein  sage mstar_eisenstein.sage           # Prop. mstarprops (8): the four g with g^2 + g + 1 = 0
 run mstar_herm_check  sage mstar_herm_check.sage           # Prop. mstarprops (8): h is Hermitian with trace P_0
 run mstar_herm_genus  sage mstar_herm_genus.sage           # Section 6: Hermitian Gram matrices of the four structured classes
+run herm_family       sage herm_family.sage                # Section 6: Hermitian and symplectic families through M*

@@ -1,0 +1,59 @@
+g with g^2+g+1=0 in Aut(M*): 4
+  g fixes HD: True  fixes HA: True
+  g fixes HD: True  fixes HA: True
+  g fixes HD: True  fixes HA: True
+  g fixes HD: True  fixes HA: True
+common g for D4, M*, A2xA2: 4
+dim of Hermitian space for g: 4
+  not isodual via U at trial 0
+  not isodual via U at trial 1
+  not isodual via U at trial 2
+  not isodual via U at trial 3
+  not isodual via U at trial 4
+  not isodual via U at trial 5
+  not isodual via U at trial 6
+  not isodual via U at trial 7
+  not isodual via U at trial 8
+  not isodual via U at trial 9
+  not isodual via U at trial 10
+  not isodual via U at trial 11
+  not isodual via U at trial 12
+  not isodual via U at trial 13
+  not isodual via U at trial 14
+  not isodual via U at trial 15
+  not isodual via U at trial 16
+  not isodual via U at trial 17
+  not isodual via U at trial 18
+  not isodual via U at trial 19
+every sampled Hermitian G satisfies U G^{-1} U^T = G / c: False
+dim of the U-family's tangent space at M* (+1 eigenspace): 4
+tangent spaces equal: False
+dim(V_g cap T_U) at M*: 2
+fixed unimodular W (W = U a, a in Aut) making every sampled Hermitian G isodual: 6
+[ 0  0  1  0]
+[ 0  0  0 -1]
+[-1  0  0  1]
+[ 0  1 -1  0]
+  W also works for HD, HA: True True
+  U works for HD, HA: True True
+structure 0: dim V_h = 4, V_h = T_U: False, V_h = V_g: True, h = g^-1: False
+structure 1: dim V_h = 4, V_h = T_U: False, V_h = V_g: False, h = g^-1: False
+structure 2: dim V_h = 4, V_h = T_U: False, V_h = V_g: True, h = g^-1: True
+structure 3: dim V_h = 4, V_h = T_U: False, V_h = V_g: False, h = g^-1: False
+Hermitian W at M*: T^2 = -1/135 * I (c = 135): symplectic
+Hermitian W at a random Hermitian G: T^2 = -1/119303 * I (c = 119303): symplectic
+paper's U at M*: T^2 = 1/135 * I (c = 135): not scalar
+paper's U at D4: T^2 = 1/2 * I (c = 2): not scalar
+paper's U at A2xA2: T^2 = 1/9 * I (c = 9): not scalar
+all 6 Hermitian W at M*: ['symplectic', 'symplectic', 'symplectic', 'symplectic', 'symplectic', 'symplectic']
+dim(V_g' cap T_U): 2
+dim(V_g cap V_g'): 2
+dim(V_g cap V_g' cap T_U): 2
+span(P, H_D, H_A) dim: 2  contained in V_g cap V_g' cap U-tangent? True
+M* c not a square: 135
+D4 c not a square: 2
+A2xA2 : normalised sigma has order 4  sigma^2 = [1, -1, 1, 0, 0, -1, 2, 0, 0, 0, 1, 0, 0, 0, 1, -1]  charpoly x^4 - 1
+M* : sigma^2 charpoly x^4 - 2*x^2 + 1 ; sigma^4 = I: True ; sigma^2 = -I: False
+D4 : sigma^2 charpoly x^4 - 2*x^2 + 1 ; sigma^4 = I: True ; sigma^2 = -I: False
+A2xA2 : sigma^2 charpoly x^4 - 2*x^2 + 1 ; sigma^4 = I: True ; sigma^2 = -I: False
+exit 0 after 9 s
