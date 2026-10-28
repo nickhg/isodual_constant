@@ -1,0 +1,4 @@
+flags 544320 36s
+distinct C_f 544320
+norms^2 [28.]
+saved 39s
