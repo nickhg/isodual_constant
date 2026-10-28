@@ -1,0 +1,2 @@
+commutant dim: 1
+exit 0 after 18 s

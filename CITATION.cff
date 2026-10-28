@@ -8,7 +8,7 @@ license: MIT
 repository-code: "https://github.com/nickhg/isodual_constant"
 preferred-citation:
   type: article
-  title: "The isodual constant of the LLL potential: exact values, structure and reduction guarantees"
+  title: "The isodual constant of the LLL potential: exact values and structure"
   authors:
     - family-names: Howgrave-Graham
       given-names: Nick

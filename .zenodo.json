@@ -6,7 +6,7 @@
       "name": "Howgrave-Graham, Nick"
     }
   ],
-  "description": "Checkers, coverage scripts, exact certificates, hash manifests and verification instructions for the computer-assisted proof of eta_5 = 6 in Nick Howgrave-Graham, <i>The isodual constant of the LLL potential: exact values, structure and reduction guarantees</i> (2026). The certificate logs (about 263 GB) are in the dataset linked below.",
+  "description": "Checkers, coverage scripts, exact certificates, hash manifests and verification instructions for the computer-assisted proof of eta_5 = 6 in Nick Howgrave-Graham, <i>The isodual constant of the LLL potential: exact values and structure</i> (2026). The certificate logs (about 263 GB) are in the dataset linked below.",
   "license": "MIT",
   "keywords": [
     "lattices",

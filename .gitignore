@@ -3,3 +3,6 @@ build/
 certificates/run_all.log
 *.pdf
 __pycache__/
+certificates/e6_A.sobj
+certificates/e6_flags.json
+certificates/e6_cross_r2.sobj

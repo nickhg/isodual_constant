@@ -1,0 +1,12 @@
+D5: 720 Psi-minimal bases, (G0^-1)_ii = [1, 2, 3, 5/4, 5/4]
+  spinor node 3: min_f L_f(Lam_0) = -8/3 (120 flags), |Lam_0|^2 = 20  =>  r <= 4/15*sqrt(5) = 0.596285
+  spinor node 4: min_f L_f(Lam_0) = -8/3 (120 flags), |Lam_0|^2 = 20  =>  r <= 4/15*sqrt(5) = 0.596285
+D5: r <= 4/(3 sqrt5)
+D4: 144 Psi-minimal bases, 144 distinct gradients
+D4: 105184 facets, each re-checked against all 144 vertices; nearest d^2 = 4/9 on 16 facets; next d = 0.760095, 0.769800, 0.790985
+  Lam_0 = 3(I - 2P), P onto weights (0, 2): min_f L_f = -4/3 (54 flags), |Lam|^2 = 4
+  Lam_0 = 3(I - 2P), P onto weights (0, 3): min_f L_f = -4/3 (54 flags), |Lam|^2 = 4
+  Lam_0 = 3(I - 2P), P onto weights (2, 3): min_f L_f = -4/3 (54 flags), |Lam|^2 = 4
+D4: r = 2/3 exactly; rho = 33/100: margin r - (3/2) rho exp(sqrt(3/4) rho) = 0.007915318887832?
+LEMMA HOLDS: eta(G) <= 3 for d(G, G0) <= 33/100 about D4 (equality only at G0)  (69s)
+exit 0 after 69 s

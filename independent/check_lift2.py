@@ -1,5 +1,5 @@
 """check_lift2: an independent re-implementation of the stage-2 leaf checker, written from the log-format specification
-in Appendix app:s2 of the paper (and the header of check_lift.c), in Python with Arb ball arithmetic (python-flint), so
+in Appendix E of the paper (and the header of check_lift.c), in Python with Arb ball arithmetic (python-flint), so
 that it shares no code, no arithmetic and no language with check_lift.c.  Only one table is taken from check_lift.c: the
 integral targets K_0 = Cartan(D5) and K_1 = 4 Gram(D5^*) of the (B) leaves (T_t = K_t / det(K_t)^{1/5}), since the
 specification fixes them only up to the choice of basis.

@@ -1,0 +1,5 @@
+scalar on first argument: {'w^-1'}
+h(y,x) = conj h(x,y): True
+trace = <,>: True
+h(x, g y) vs h(x,y): {'w'}
+exit 0 after 1 s

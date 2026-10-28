@@ -1,0 +1,7 @@
+D4 N = 6  classes attaining 1/h: 48  orders: [6]  closed under sign: True  up to sign: 24
+D4 N = 12  classes attaining 1/h: 48  orders: [6]  closed under sign: True  up to sign: 24
+D4 N = 24  classes attaining 1/h: 48  orders: [6]  closed under sign: True  up to sign: 24
+A4 N = 5  classes attaining 1/h: 24  orders: [5]  closed under sign: True  up to sign: 12
+A4 N = 10  classes attaining 1/h: 24  orders: [5]  closed under sign: True  up to sign: 12
+A4 N = 20  classes attaining 1/h: 24  orders: [5]  closed under sign: True  up to sign: 12
+exit 0 after 235 s

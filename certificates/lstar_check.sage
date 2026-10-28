@@ -1,4 +1,4 @@
-# L_* (Remark rem:phi5): build it from P_0, phi_0 = (0,0,1/3,1/3), r = 18; check WC's integral form, shells, the
+# L_* (Remark 18): build it from P_0, phi_0 = (0,0,1/3,1/3), r = 18; check WC's integral form, shells, the
 # flag with prefix determinants 6, 27, 108, 405, 1350, and compute eta(L_*) exactly with psi.sage.
 import os
 load("psi.sage")

@@ -1,0 +1,9 @@
+|Aut| = 72
+elements with g^2+g+1=0: 4
+[ 0 -1  1  0]
+[ 1 -1  1 -1]
+[ 0  0  0 -1]
+[ 0  0  1 -1]
+fixed space of g: 0
+theta series: 1 + 18*q^16 + 6*q^18 + 6*q^30 + 18*q^34 + O(q^40)
+exit 0 after 8 s

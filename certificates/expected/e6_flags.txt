@@ -1,0 +1,8 @@
+lines 36 flags 19440 2s
+eta(E6) = 128/9*sqrt(3) = 24.6336114854240  128 sqrt3/9 = 24.6336114854240
+rank 20 distinct 19440
+sum of L_f = 0: True
+design A^T A == c H: True  c = 17010
+dual norms all 35/2: True
+done 41s
+exit 0 after 50 s

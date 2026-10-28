@@ -2,7 +2,7 @@
 
 This guide is for referees and readers who want to check the computer-assisted parts of
 
-> Nick Howgrave-Graham, *The isodual constant of the LLL potential: exact values, structure and reduction guarantees* (2026).
+> Nick Howgrave-Graham, *The isodual constant of the LLL potential: exact values and structure* (2026).
 
 The main result, η₅ = 6 (attained only by D₅ and D₅\*), has two kinds of ingredients:
 
@@ -13,7 +13,7 @@ Checking can be done at four levels of effort. Each level says what it establish
 
 | Tier | What you check | Time | Machine | Download |
 |---|---|---|---|---|
-| 1 | every **exact** (non-search) certificate | ~3.2 h total (one core) | laptop with SageMath | none (in this repo) |
+| 1 | every **exact** (non-search) certificate | ~3.5 h total (one core) | laptop with SageMath | none (in this repo) |
 | 2 | a complete worked example: checker → coverage, plus the checker's own tests | ~3 min | laptop | none (in this repo) |
 | 3 | a **sample** of the published certificate, against the hash manifests | ~1–2 h | laptop / workstation | a few GB |
 | 4 | **every** log, with one static checker build, plus full coverage | ~620 vCPU-hours | cloud or cluster | 263 GB |
@@ -25,9 +25,11 @@ Whatever tier you choose, the following are trusted. They are listed in the pape
 - **The checkers:** `src/check_phi.c` (696 lines) and `src/check_lift.c` (557 lines).
   - Their exp and log come from **CORE-MATH** (`src/third_party/core-math`), which is correctly rounded in every rounding mode, widened by one ulp.
   - They rely on IEEE-754 arithmetic under directed rounding, and on the C compiler.
-- **For the exact certificates (tier 1):** SageMath, through its exact rational arithmetic and, where intervals are used, its interval arithmetic (`RealIntervalField`). Theorem D5 is one of these, and the stage-2 (B) leaves rest on it.
+- **For the exact certificates (tier 1):** SageMath, through its exact rational arithmetic and, where intervals are used, its interval arithmetic (`RealIntervalField`). Theorem 13 is one of these, and the stage-2 (B) leaves rest on it.
 - **The coverage and merge scripts:** `scripts/cover_check.py`, `root_box_check.py`, `merge_check.py` and `cover_s2.py`, about 240 lines of Python comparing hexadecimal floats exactly.
 - **The reductions on paper.**
+
+**Leaf-type names.** The paper calls the two leaf types of `check_phi` (D) and (A) (Appendix C). The header comment of `src/check_phi.c` calls the second one (C); the source is left unchanged so that it stays byte-identical to the version stamped in the checker outputs (`manifests/sources.sha256`).
 
 **Not trusted:** the producers (`src/producers/*/`) and all orchestration scripts. A log is only a *candidate* until a checker has proved every leaf in it.
 
@@ -43,15 +45,22 @@ cd certificates && ./run_all.sh
 
 | script | claim in the paper | expected output (see `certificates/expected/`) | time |
 |---|---|---|---|
-| `d5_lemma.sage 1/10 5` | **Theorem D5** (used in the η₅ proof): η ≤ 6 within distance 1/10 of D₅, equality only at D₅; likewise for D₅\* | `LEMMA HOLDS: eta(G) <= 6 for d(G, G0) <= 1/10 …` | 3 min |
-| `pivd5_lemma.sage 1/20 11/20` | Prop. pivd5: π_vD₅ is a sharp local maximum of Φ₅ (landscape only, not used for η₅) | interior and exterior margins 0.0277, 0.1276 | 62 min |
-| `mstar_lemma.sage 1/40 9/10` | Prop. mstar: M\* is a sharp local maximum of Φ₅ (strictness in Thm. phi5max; not used for η₅) | margins 0.0691, 0.0460 | 117 min |
+| `d5_lemma.sage 1/10 5` | **Theorem 13** (used in the η₅ proof): η ≤ 6 within distance 1/10 of D₅, equality only at D₅; likewise for D₅\* | `LEMMA HOLDS: eta(G) <= 6 for d(G, G0) <= 1/10 …` | 3 min |
+| `radius_d4d5.sage` | Appendix A: the D₄ radius r = 2/3 exactly (all 105,184 facets, via Normaliz), so η ≤ 3 within distance 33/100 of D₄; and r ≤ 4/(3√5) at D₅ | `LEMMA HOLDS: eta(G) <= 3 for d(G, G0) <= 33/100 …` | 1 min (needs `normaliz`) |
+| `rad_produce.py cert 8`, then `rad_check.py cert` | Appendix A: the D₅ radius is exactly 4/(3√5) (lower bound; the upper bound is in `radius_d4d5.sage`). The producer (numpy, scipy; untrusted) writes a cover of 448 logs; the checker re-proves every box in exact rationals. Inputs come from `rad_inputs.sage` | `THEOREM HOLDS: … r(D5) >= 4/(3 sqrt5)`, with 199,619 boxes | 10 min on 8 cores + 1 min |
+| `pivd5_lemma.sage 1/20 11/20` | Prop. 21: π_vD₅ is a sharp local maximum of Φ₅ (landscape only, not used for η₅) | interior and exterior margins 0.0277, 0.1276 | 62 min |
+| `mstar_lemma.sage 1/40 9/10` | Prop. 22: M\* is a sharp local maximum of Φ₅ (strictness in Thm. 20; not used for η₅) | margins 0.0691, 0.0460 | 117 min |
 | `mstar_unique.sage`, `lstar_check.sage` | κ(M\*) attained only at ±φ₀; η(L\*) = 486/125 | as stated | minutes |
 | `mstar_invariants.sage`, `family_exact.py`, `geodesic_exact.py` | \|Aut(M\*)\| = 72, not strongly modular; M\* lies on the isodual geodesic D₄ → A₂⊗A₂ at parameter log₂(6/5) | exact | minutes |
-| `a2a2.sage`, `shadow_iso.sage` | the exact entries of Remark rem:peaks | exact | minutes |
+| `a2a2.sage`, `shadow_iso.sage` | the exact entries of Remark 24 | exact | minutes |
+| `mstar_genus.sage`, `mstar_mass.sage` | Prop. 17 (7): the genus of M\* has class number 6 (mass check Σ1/\|Aut\| = 1/3), and M\* is its unique lattice of largest minimum | `class number of the genus: 6`; minima 4, 16, 10, 4, 12, 10 | 1 min |
+| `mstar_eisenstein.sage`, `mstar_herm_check.sage`, `mstar_herm_genus.sage` | Prop. 17 (8) and §6: M\* is Hermitian of rank 2 over ℤ[ω] (Gram matrix (8, 3−2ω; 3−2ω̄, 8), det 45); the four structured classes of its genus | exact | 1 min |
+| `d4_kappa_classes.py` | Prop. 12: exact search over the torsion grids finds exactly 48 κ-maximizer classes at D₄ and 24 at A₄ | `classes attaining 1/h: 48` (D₄), `24` (A₄) | 4 min |
+| `e6_flags.sage`, `e6_cross.sage`, `e7_design.sage` | Prop. 26: the Ψ-minimal flags of E₆ (19,440) and E₇ (544,320) and the design identities, exactly; the LP certificate r(E₆) ≥ 3/10 | exact | 6 min |
+| `schur_check.sage 6`, `7`, `8` | Prop. 26: W(E_n) acts irreducibly on traceless symmetric forms (commutant of dimension 1); for E₈ the interval check of the radius 1/20 | `commutant dim: 1` | 1 min |
 
 **What this establishes:** all exact claims that do not rest on a search.
-- **For η₅:** this covers Theorem D5, which is the equality case and the (B) leaves of stage 2.
+- **For η₅:** this covers Theorem 13, which is the equality case and the (B) leaves of stage 2.
 - **Arithmetic:** these computations use exact rational arithmetic, or interval arithmetic in Sage with rigorous rounding.
 
 ## Tier 2: a complete worked example (laptop, minutes)
@@ -159,4 +168,4 @@ This repeats the paper's final re-check: every log of the four certificates (Φ�
 
 `scripts/replay2.sh` is the script the paper's own final re-check used, reading from our storage. It is included as a record; the steps above do the same from the public dataset.
 
-**What this establishes:** every leaf of every certificate has been proved by a checker you built, and the leaves tile the search spaces. Together with the reductions on paper and the tier-1 certificates, that is the whole proof of Theorems eta5le7, phi5max and eta5.
+**What this establishes:** every leaf of every certificate has been proved by a checker you built, and the leaves tile the search spaces. Together with the reductions on paper and the tier-1 certificates, that is the whole proof of Theorems 19, 20 and 14.

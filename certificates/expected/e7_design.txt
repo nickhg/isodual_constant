@@ -1,0 +1,16 @@
+Psi^2 = 2304  eta(E7) = Psi^2/det^4 = 144
+flags 544320 81s
+sum L_f = 0: True
+design sum L_f L_f^T == N(28/27) H: True  c = 564480
+explicit flag, added roots: [[1, 2, 2, 3, 3, 2, 1], [2, 2, 3, 4, 3, 2, 1], [1, 2, 3, 4, 3, 2, 1], [1, 1, 1, 2, 2, 2, 1], [1, 2, 2, 4, 3, 2, 1], [1, 2, 2, 3, 2, 1, 1]]
+its prefix dets: [2, 3, 4, 4, 4, 3]  dual norm^2 = 28
+done 81s
+weights (6,)  min L_f = -35/6  |Lam|^2 = 42  ratio = 5/6*sqrt(7/6) = 0.900103
+weights (0, 5, 6)  min L_f = -35/6  |Lam|^2 = 28/3  ratio = 5/4*sqrt(7/3) = 1.909407
+weights (1, 2)  min L_f = -693/80  |Lam|^2 = 35/2  ratio = 99/40*sqrt(7/10) = 2.070734
+weights (1, 5)  min L_f = -693/80  |Lam|^2 = 35/2  ratio = 99/40*sqrt(7/10) = 2.070734
+design 1/20 neg -0.00194373523606785
+design 3/50 neg -0.000341987565104244
+design 1/16 NOT 0.000167994610928433
+design 13/200 NOT 0.000722375620035522
+exit 0 after 116 s

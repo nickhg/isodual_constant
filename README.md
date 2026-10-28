@@ -2,9 +2,9 @@
 
 Code, certificates and verification instructions for
 
-> **Nick Howgrave-Graham, *The isodual constant of the LLL potential: exact values, structure and reduction guarantees* (2026).** [arXiv link to be added]
+> **Nick Howgrave-Graham, *The isodual constant of the LLL potential: exact values and structure* (2026).** [arXiv link to be added]
 
-**Status:** preprint. DOIs: this repository, release v1.0 (the version of the paper), [10.5281/zenodo.23650217](https://doi.org/10.5281/zenodo.23650217) (all versions: [10.5281/zenodo.23650216](https://doi.org/10.5281/zenodo.23650216)); the dataset, [10.57967/hf/11260](https://doi.org/10.57967/hf/11260). To report a problem, or a failed check, please open an issue on this repository.
+**Status:** preprint. DOIs: this repository, all versions [10.5281/zenodo.23650216](https://doi.org/10.5281/zenodo.23650216) (release v1.0: [10.5281/zenodo.23650217](https://doi.org/10.5281/zenodo.23650217); release v1.1 matches the current version of the paper); the dataset, [10.57967/hf/11260](https://doi.org/10.57967/hf/11260). To report a problem, or a failed check, please open an issue on this repository.
 
 ## The paper
 
@@ -12,11 +12,12 @@ The constant η_n is the supremum over n-dimensional lattices of the LLL potenti
 
 The paper proves:
 - **η₅ = 6**, attained only by D₅ and D₅\*;
+- **the global maximum of Φ₅** is 2¹⁶/(3⁴·5³) ≈ 6.4727, attained only at an even 135-modular lattice M\* (a Hermitian lattice of rank 2 over ℤ[ω]), so the reduction to Φ₅ alone cannot reach 6;
 - **η₈ = 2304**, attained by E₈;
-- **the uniqueness of D₄** for η₄ = 3;
-- **η of every root lattice**;
-- **log η_n = (¼ + o(1)) n² log n**;
-- **reduction guarantees** for potential-based lattice reduction, which for blocks of size m ≤ 5 match slide reduction's Hermite factor.
+- **η of every irreducible root lattice**;
+- **E₆, E₇, E₈ and their duals are strict local maxima** of η, with explicit radii;
+- **log η_n = (¼ + o(1)) n² log n**, with a second-order bracket;
+- **the Ψ-Hermite constant** μ_m equals γ_m for m ≤ 5.
 
 The proof of η₅ = 6 is computer-assisted. This repository contains everything needed to check that part.
 
@@ -28,7 +29,8 @@ The proof of η₅ = 6 is computer-assisted. This repository contains everything
 |---|---|
 | `src/` | **The trusted checkers** `check_phi.c` and `check_lift.c`, with CORE-MATH's correctly rounded exp and log (`src/third_party/core-math`, MIT). **The untrusted producers** `certify.c` and `stage2.c`, at each version stamped in the logs (`src/producers/<stamp>/`). |
 | `scripts/` | coverage and merge checks; the instance scripts used to produce and re-check the certificates; the broken-certificate tests; the CORE-MATH accuracy test |
-| `certificates/` | the exact (non-search) certificates in SageMath: Theorem D5, Propositions pivd5 and mstar, M\*, L\*, the isodual geodesic, A₂⊗A₂, π_vA₄. `run_all.sh` runs them all; expected outputs are in `certificates/expected/` |
+| `certificates/` | the exact (non-search) certificates in SageMath and Python: Theorem 13, Propositions 21 and 22, the D₄ and D₅ radii (App. A), the κ-maximizers of D₄ and A₄ (Prop. 12), M\* and its genus and Hermitian structure (Prop. 17), L\*, the isodual geodesic, A₂⊗A₂, π_vA₄, and the E₆, E₇, E₈ local maxima (Prop. 26). `run_all.sh` runs them all; expected outputs are in `certificates/expected/` |
+| `numerics/` | the floating-point computations the paper reports as numerical (not used in any proof): the Φ₅ curve of Figure 1, the Φ₆ geodesic scan of §7, the μ_m check of §9. See `numerics/README.md` |
 | `inputs/` | the two small fixed inputs of `check_phi`: the bases defining the balls about π_vD₅ (`pivd5_U.txt`, stage 1) and M\* (`mstar_U.txt`, Φ₅ ≤ P) |
 | `independent/` | `check_lift2.py`: an independent stage-2 checker (Python + Arb ball arithmetic). `validate_gz.sage`: the coordinate maps checked from first principles |
 | `manifests/` | the SHA-256 of every certificate log as recorded when it was produced; the split manifests and reference root boxes for coverage; coverage outputs; checker binary hashes |

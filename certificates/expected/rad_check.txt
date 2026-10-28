@@ -1,0 +1,9 @@
+1. 720 Psi-minimal flags (prefix determinants 2,3,4,4,4), 720 distinct C_f
+2. {C_f} invariant under signed permutations
+3. cap lemma: s^2 >= 25827416502355623929760/981366756031361006728543 (s >= 0.16223), tan(theta0/2) = 27/100 <= s/r0, cos(theta0) = 9271/10729
+4. 448 logs, every leaf proved: {'O': 58158, 'L': 135046, 'F': 6255, 'K': 160}
+THEOREM HOLDS: max_f <C_f, Lam> >= (4/(3 sqrt5)) |Lam| for all traceless Lam; r(D5) >= 4/(3 sqrt5)
+
+real	1m16.623s
+user	1m16.480s
+sys	0m0.107s
