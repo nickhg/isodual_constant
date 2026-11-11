@@ -2,7 +2,7 @@
 
 This guide is for referees and readers who want to check the computer-assisted parts of
 
-> Nick Howgrave-Graham, *The isodual constant of the LLL potential: exact values and structure* (2026).
+> Nick Howgrave-Graham, *The isodual constant of the LLL potential: exact values and structure* (2026). Cryptology ePrint Archive, Paper 2026/2846, <https://eprint.iacr.org/2026/2846>.
 
 The main result, η₅ = 6 (attained only by D₅ and D₅\*), has two kinds of ingredients:
 
